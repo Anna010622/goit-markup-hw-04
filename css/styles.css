@@ -78,7 +78,6 @@ body {
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
-  margin-right: 156px;
 
   color: var(--main-light-color);
 }
@@ -200,6 +199,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .visually-hidden {
@@ -315,6 +315,8 @@ body {
 }
 .client-flex-element {
   flex-basis: calc((100% - 30px * 5) / 6);
+}
+.client-link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   height: 92px;
@@ -326,12 +328,12 @@ body {
 .client-icon {
   fill: #afb1b8;
 }
-.client-flex-element:hover,
-.client-flex-element:focus {
+.client-link:hover,
+.client-link:focus {
   border-color: var(--accent-color);
 }
-.client-flex-element:hover .client-icon,
-.client-flex-element:focus .client-icon {
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
   fill: var(--accent-color);
 }
 
@@ -343,15 +345,19 @@ body {
   padding-top: 60px;
   padding-bottom: 57px;
 }
-.footer-inner {
+.footer-flex-container {
   display: flex;
   align-items: baseline;
 }
+.footer-flex-element:not(:last-child) {
+  margin-right: 94px;
+}
 .footer-text {
+  margin-bottom: 20px;
+
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
-
   color: var(--main-light-color);
 }
 .address {
@@ -363,7 +369,6 @@ body {
 .footer-address {
   font-style: normal;
   line-height: 1.71;
-  margin-right: 91px;
 }
 .footer-list-item:not(:last-child) {
   margin-bottom: 9px;
